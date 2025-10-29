@@ -65,6 +65,7 @@
     Gender <span class="required" aria-hidden="true">*</span>
   </legend>
 
+  <!-- Added ... to simulate a pause in the screen reader, if not it was too much-->
   <span id="gender_prefix" class="visually-hidden">Form field</span>
   <span id="gender_hint" class="visually-hidden">...Use arrow keys to select your gender.</span>
 
@@ -86,17 +87,11 @@
 
         
         <div class="control">
-  <!-- Hidden prefix for SRs -->
+  <!-- Hidden "form field" for screen reader -->
   <span id="terms_prefix" class="visually-hidden">Form field</span>
 
-  <input
-    id="accept_agbs"
-    name="accept_agbs"
-    type="checkbox"
-    value="1"
-    required
-    aria-labelledby="terms_prefix terms_label"
-  />
+  <input id="accept_agbs" name="accept_agbs" type="checkbox" value="1" required
+    aria-labelledby="terms_prefix terms_label"/>
 
   <label id="terms_label" for="accept_agbs">
     I accept the terms and conditions <span class="required" aria-hidden="true">*</span>
